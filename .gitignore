@@ -1,0 +1,38 @@
+# Arquivos temporários
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.iml
+
+# Pasta de saída de compilação
+/target/
+
+# Configurações específicas de IDE
+.idea/
+*.project
+*.classpath
+*.settings/
+
+# Dependências do Maven
+/.mvn/
+target/
+
+# Logs e relatórios
+log/
+logs/
+*.log
+*.txt
+
+# Intellij IDEA
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+
+data/mysql.sock
