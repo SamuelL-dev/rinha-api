@@ -35,14 +35,11 @@ public class RequestHandlerException {
         return handlerException(ex, status, request, ex.getMessage());
     }
 
-// HttpMessageNotReadableException
     private ResponseEntity<StandardError> handlerException(Exception ex, HttpStatus status, HttpServletRequest request, String error) {
         StandardError err = new StandardError(Instant.now(), status.value(), ex.getMessage(), request.getRequestURI());
         log(ex);
         return ResponseEntity.status(status).body(err);
     }
-
-
 
     private void log(Throwable ex) {
         logger.error("error message {}. Details: ", ex.getMessage(), ex);
