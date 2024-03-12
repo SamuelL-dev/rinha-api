@@ -8,9 +8,6 @@ import rinha.backend.domain.enuns.TransactionType;
 @Component
 @Getter
 public class DebitTransactionValidator implements TransactionValidator {
-
-    private final TransactionType transactionType = TransactionType.d;
-
     @Override
     public TransactionType getTypeTransaction() {
         return TransactionType.d;
@@ -18,7 +15,7 @@ public class DebitTransactionValidator implements TransactionValidator {
 
     @Override
     public void validate(TransactionValidatorArgs args) {
-        if(args.client().getTotalAvailable() < args.transactionValue()) {
+        if (getTypeTransaction() == args.transacion().getType() && args.client().getTotalAvailable() < args.transactionValue()){
             throw new InsufficientDebitBalanceException("Insufficient balance for debit transaction");
         }
     }

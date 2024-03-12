@@ -18,7 +18,7 @@ public class CreditTransactionValidator implements TransactionValidator {
 
     @Override
     public void validate(TransactionValidatorArgs args) {
-        if(TransactionType.c == args.transacion().getType() && args.transactionValue() > args.client().getBalanceLimit()) {
+        if(getTypeTransaction() == args.transacion().getType() && args.transactionValue() > args.client().getBalanceLimit()) {
             throw new InsufficientDebitBalanceException("Insufficient balance for credit transaction");
         }
     }
