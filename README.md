@@ -21,9 +21,11 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 # Construção e Execução
 
 1- Construa a aplicação:
- docker-compose build nome-da-imagem C:caminho/do/projeto
+
+ docker-compose build nome-da-imagem C:\caminho\do\projeto
 
 2- Inicie os containers:
+
  docker-compose up
 
 # Acesso à Aplicação
