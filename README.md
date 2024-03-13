@@ -20,13 +20,24 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 # Construção e Execução
 
-1- Construa a aplicação:
+1- Construir a aplicação com Maven:
+ 
+ mvn clean install
 
- docker-compose build nome-da-imagem C:\caminho\do\projeto
+ Este comando irá limpar o projeto, compilar o código-fonte, executar os testes e empacotar o aplicativo em um arquivo JAR ou WAR, dependendo do tipo de projeto.
 
-2- Inicie os containers:
+
+2- Construir a imagem docker
+
+ docker-compose build nome-da-imagem
+
+ Este comando irá construir a imagem Docker para a sua aplicação, utilizando o Dockerfile presente no diretório do projeto.
+
+3- Inicie os containers:
 
  docker-compose up
+
+ Isso iniciará os containers com base nas definições no arquivo docker-compose.yml. Certifique-se de que todos os serviços necessários, como bancos de dados, estejam configurados corretamente no arquivo docker-compose.yml.
 
 # Acesso à Aplicação
 Acesse a aplicação em http://mysqldb:9999
