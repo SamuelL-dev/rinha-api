@@ -35,7 +35,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 3- Inicie os containers:
 
- -> docker-compose up
+ -> docker-compose up -d
 
  Isso iniciará os containers com base nas definições no arquivo docker-compose.yml. Certifique-se de que todos os serviços necessários, como bancos de dados, estejam configurados corretamente no arquivo docker-compose.yml.
 
