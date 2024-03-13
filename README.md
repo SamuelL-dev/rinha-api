@@ -24,7 +24,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
  
  -> mvn clean install
 
- Este comando irá limpar o projeto, compilar o código-fonte, executar os testes e empacotar o aplicativo em um arquivo JAR ou WAR, dependendo do tipo de projeto.
+ Este comando irá limpar o projeto, compilar o código-fonte, executar os testes e empacotar o aplicativo em um arquivo JAR.
 
 
 2- Construir a imagem docker
