@@ -62,6 +62,10 @@ public class TransactionService {
         return mapper.map(repository.save(newTransaction), TransactionDTO.class);
     }
 
+    public void testMerge() {
+        System.out.println("one");
+    }
+
     private Transaction createNewTransaction(TransactionRequestDTO transaction, Client client) {
         Transaction newTransaction = new Transaction(transaction.type(), transaction.amount(), transaction.description(), client);
         return newTransaction;
