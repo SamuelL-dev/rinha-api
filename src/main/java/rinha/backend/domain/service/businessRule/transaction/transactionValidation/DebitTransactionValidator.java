@@ -1,4 +1,4 @@
-package rinha.backend.domain.service.businessRule.transaction.validation;
+package rinha.backend.domain.service.businessRule.transaction.transactionValidation;
 
 import lombok.Getter;
 import org.springframework.stereotype.Component;

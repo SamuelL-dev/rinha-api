@@ -1,4 +1,4 @@
-package rinha.backend.domain.service.businessRule.transaction.operation;
+package rinha.backend.domain.service.businessRule.transaction.transactionOperation;
 
 import rinha.backend.domain.enuns.TransactionType;
 

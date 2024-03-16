@@ -1,4 +1,4 @@
-package rinha.backend.domain.service.businessRule.transaction.operation;
+package rinha.backend.domain.service.businessRule.transaction.transactionOperation;
 
 import rinha.backend.api.dtos.request.TransactionRequestDTO;
 import rinha.backend.domain.model.Client;

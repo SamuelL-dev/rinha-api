@@ -1,4 +1,4 @@
-package rinha.backend.domain.service.businessRule.transaction.operation;
+package rinha.backend.domain.service.businessRule.transaction.transactionOperation;
 
 import lombok.Getter;
 import org.springframework.stereotype.Component;

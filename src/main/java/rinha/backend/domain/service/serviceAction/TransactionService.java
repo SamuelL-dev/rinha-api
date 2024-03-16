@@ -9,11 +9,11 @@ import rinha.backend.api.dtos.response.TransactionDTO;
 import rinha.backend.domain.enuns.TransactionType;
 import rinha.backend.domain.model.Client;
 import rinha.backend.domain.model.Transaction;
-import rinha.backend.domain.service.businessRule.transaction.operation.TransactionOperation;
-import rinha.backend.domain.service.businessRule.transaction.operation.TransactionOperationArgs;
+import rinha.backend.domain.service.businessRule.transaction.transactionOperation.TransactionOperation;
+import rinha.backend.domain.service.businessRule.transaction.transactionOperation.TransactionOperationArgs;
 import rinha.backend.domain.repositories.TransactionRepository;
-import rinha.backend.domain.service.businessRule.transaction.validation.TransactionValidator;
-import rinha.backend.domain.service.businessRule.transaction.validation.TransactionValidatorArgs;
+import rinha.backend.domain.service.businessRule.transaction.transactionValidation.TransactionValidator;
+import rinha.backend.domain.service.businessRule.transaction.transactionValidation.TransactionValidatorArgs;
 
 import java.util.List;
 
