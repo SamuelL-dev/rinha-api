@@ -10,8 +10,8 @@ import rinha.backend.api.dtos.response.TransactionResponseDTO;
 import rinha.backend.domain.model.Client;
 import rinha.backend.domain.model.Transaction;
 import rinha.backend.domain.repositories.TransactionRepository;
-import rinha.backend.domain.service.ClientService;
-import rinha.backend.domain.service.TransactionService;
+import rinha.backend.domain.service.serviceAction.ClientService;
+import rinha.backend.domain.service.serviceAction.TransactionService;
 
 import java.util.List;
 
